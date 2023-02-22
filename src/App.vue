@@ -1,17 +1,22 @@
 <template>
   <MySidebar />
-  <MyDialog />
+  <StaticContent />
+  <DialogToolbar />
 </template>
 
 <script>
 import MySidebar from './components/MySidebar.vue'
-import MyDialog from './components/MyDialog.vue'
+//import MyDialog from './components/MyDialog.vue'
+import StaticContent from './components/StaticContent.vue'
+import DialogToolbar from './components/DialogToolbar.vue'
 
 export default {
   name: 'App',
   components: {
     MySidebar,
-    MyDialog,
+    //MyDialog,
+    StaticContent,
+    DialogToolbar
   }
 }
 </script>

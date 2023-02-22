@@ -1,4 +1,5 @@
 <template>
+
 <Button class="open-sidebar" icon="pi pi-arrow-right" @click="toggleSidebar"/>
 <Sidebar v-model:visible="visibleLeft" position="left">
     <Button class="sidebar-item" label="Home" icon="pi pi-home"/>
@@ -32,15 +33,5 @@ import Sidebar from 'primevue/sidebar'
 </script>
 
 <style>
-.open-sidebar{
-    position: fixed;
-    top: 1%;
-    left: 1%;
-}
 
-.sidebar-item{
-    display: block;
-    width: 100%;
-    margin: 1%;
-}
 </style>
