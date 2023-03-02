@@ -8,9 +8,9 @@
         </model-viewer>
 
         <div class="btn-container">
-            <Button class="stage-btn" label="I" @click="setStage(0)"/>
-            <Button class="stage-btn" label="II" @click="setStage(1)"/>
-            <Button class="stage-btn" label="III" @click="setStage(2)"/>
+            <Button class="stage-btn" label="Stage 1" @click="setStage(0)"/>
+            <Button class="stage-btn" label="Stage 2" @click="setStage(1)"/>
+            <Button class="stage-btn" label="Stage 3" @click="setStage(2)"/>
         </div>
     </div>
   </template>
