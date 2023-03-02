@@ -1,7 +1,7 @@
 <template>
     <Toolbar class="dialog-toolbar">
         <template #center>
-            <MyDialog />
+            <MyDialog :text="text"/>
             <MyDialog />
         </template>
     </Toolbar>
@@ -17,6 +17,11 @@ export default {
         //Card,
         Toolbar,
         MyDialog,
+    },
+    data() {
+        return {
+            text: "test"
+        }
     }
 }
 </script>

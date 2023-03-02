@@ -1,0 +1,19 @@
+.stage-container{
+    border: solid;
+    border-color: #0078D4;
+}
+
+#toggle-model{
+    border: none;
+}
+
+.btn-container{
+    border-top: solid;
+    border-color: #0078D4;
+    width: 100%;
+    padding: 0% 20% 0% 20%;
+}
+
+.stage-btn{
+    margin: 2% 5% 2% 5%;
+}

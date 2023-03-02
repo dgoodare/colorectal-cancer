@@ -8,4 +8,8 @@
     display: block;
     width: 100%;
     margin: 1%;
+    text-align: start;
+}
+router-link{
+    text-decoration: none;
 }

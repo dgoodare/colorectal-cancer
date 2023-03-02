@@ -6,7 +6,7 @@
     <p>Vivamus maximus erat erat. Phasellus vitae sapien non eros molestie rhoncus non et sem. Nam laoreet egestas nisi vitae condimentum. Proin blandit ornare eros, at placerat erat. Sed ultrices luctus ex, sit amet congue orci pulvinar vel. Aenean vestibulum sed mauris ac volutpat. Mauris aliquet nec eros eget vestibulum. Ut semper ex eros, non finibus lacus convallis in. Nunc rhoncus turpis nibh, non pulvinar nisi euismod at. In eleifend risus odio, eget bibendum mi suscipit eu. Phasellus nec felis elementum est varius dictum. Praesent finibus turpis at finibus mollis. Praesent et porttitor nisl, et molestie sapien. Curabitur vel venenatis leo, finibus facilisis nisi. Cras sit amet diam lacus.</p>
     <p>Nunc quis diam at orci accumsan eleifend. Suspendisse augue velit, tempus vel ante imperdiet, facilisis ultrices tellus. Suspendisse efficitur diam quam, consectetur porta lacus gravida lobortis. Vivamus rhoncus, nibh nec luctus elementum, nunc tortor ultrices ex, rutrum laoreet dui tellus et nunc. Vestibulum volutpat nibh at fermentum luctus. Vivamus in laoreet elit. Aenean tempus libero nec sollicitudin vulputate. Sed sit amet eleifend diam, eget rutrum orci. Aenean ac augue ut felis scelerisque laoreet. Suspendisse in arcu sagittis, rhoncus elit sed, porttitor diam. Sed cursus lectus hendrerit, fermentum enim id, convallis lacus. Morbi imperdiet tortor interdum sodales vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem nulla, hendrerit ut venenatis sit amet, vulputate ultrices quam.</p>
 </Dialog>
-<Button class="toolbar-btn" label="Info" @click="toggleDialog"/>
+<Button class="toolbar-btn" label={{ text }} @click="toggleDialog"/>
 </template>
 
 <script>
@@ -30,6 +30,9 @@
 			toggleDialog() {
 				this.display = true;
 			}
+		},
+		props: {
+			text: String
 		}
 	}
 </script>
