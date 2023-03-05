@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Gloock');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+h1{
+    font-family: Gloock;
+    text-decoration: underline;
+    text-decoration-color: #0078D3;
+    text-underline-position: right under;
+}
+
+p{
+    font-family: Lato;
+}

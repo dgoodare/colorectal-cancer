@@ -1,7 +1,7 @@
 <template>
 
 <Button class="open-sidebar" icon="pi pi-bars" @click="showSidebar"/>
-<Sidebar v-model:visible="visibleLeft" position="left">
+<Sidebar v-model:visible="visibleLeft" position="left" dismissable="true">
     
     <router-link to="/"><Button class="sidebar-item" label="Home" icon="pi pi-home" @click="hideSidebar"/></router-link>
 

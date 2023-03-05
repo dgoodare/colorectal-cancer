@@ -8,20 +8,31 @@
         </model-viewer>
 
         <div class="btn-container">
-            <Button class="stage-btn" label="Stage 1" @click="setStage(0)"/>
-            <Button class="stage-btn" label="Stage 2" @click="setStage(1)"/>
-            <Button class="stage-btn" label="Stage 3" @click="setStage(2)"/>
+            
+            <Toolbar>
+              <template #start>
+                <Button class="stage-btn" label="Stage 1" @click="setStage(0)"/>
+              </template>
+              <template #center>
+                <Button class="stage-btn" label="Stage 2" @click="setStage(1)"/>
+              </template>
+              <template #end>
+                <Button class="stage-btn" label="Stage 3" @click="setStage(2)"/>
+              </template>
+            </Toolbar>
         </div>
     </div>
   </template>
   
   <script>
     import Button from 'primevue/button'
+    import Toolbar from 'primevue/toolbar';
 
   export default {
     name: 'StagesComponent',
     components: {
-        Button
+        Button,
+        Toolbar
     },
     data() {
       return {

@@ -18,6 +18,7 @@ import './styles/dialog-toolbar.css'
 import './styles/sidebar.css'
 import './styles/model.css'
 import './styles/stages.css'
+import './styles/text.css'
 
 const app = createApp(App);
 app.use(PrimeVue);
