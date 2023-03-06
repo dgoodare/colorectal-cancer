@@ -1,5 +1,6 @@
 <template>
-<h1>What is Colorectal Cancer?</h1>
+    <title>What is CRC?</title>
+<h1 id="sticky-header">What is Colorectal Cancer?</h1>
 </template>
 
 <script>

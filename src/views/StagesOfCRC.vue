@@ -1,5 +1,6 @@
 <template>
-<h1>Stages of Colorectal Cancer</h1>
+    <title>Stages of CRC</title>
+<h1 id="sticky-header">Stages of Colorectal Cancer</h1>
 <p>placeholder text</p>
 <Stages />
 </template>
