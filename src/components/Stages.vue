@@ -52,7 +52,9 @@
     methods: {
         setStage(stage) {
             const toggleModel = document.querySelector('#toggle-model')
-            const models = ['models/Astronaut.glb', 'models/alpha-blend-litmus.glb', 'models/BoomBox.glb']
+            const models = ['https://colorectal-cancer.s3.eu-west-1.amazonaws.com/models/Astronaut.glb', 
+                            'https://colorectal-cancer.s3.eu-west-1.amazonaws.com/models/alpha-blend-litmus.glb', 
+                            'https://colorectal-cancer.s3.eu-west-1.amazonaws.com/models/BoomBox.glb']
             toggleModel.setAttribute('src', models[stage])
             console.log(this.model[stage])
         }
