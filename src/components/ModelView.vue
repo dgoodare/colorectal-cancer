@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       isMounted: false,
-      src: 'https://colorectal-cancer.s3.eu-west-1.amazonaws.com/models/healthyColon.glb'
+      src: 'models/healthyColon-v1.glb'
     }
   },
   mounted() {
