@@ -1,23 +1,16 @@
 <template>
-  <MySidebar />
-  <StaticContent />
-  <DialogToolbar />
+  <SideBar />
+  <router-view></router-view>
 </template>
 
 <script>
-import MySidebar from './components/MySidebar.vue'
-//import MyDialog from './components/MyDialog.vue'
-import StaticContent from './components/StaticContent.vue'
-import DialogToolbar from './components/DialogToolbar.vue'
+import SideBar from './components/SideBar.vue'
 
 export default {
   name: 'App',
   components: {
-    MySidebar,
-    //MyDialog,
-    StaticContent,
-    DialogToolbar
-  }
+    SideBar,
+  },
 }
 </script>
 
@@ -26,7 +19,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
   margin-top: 60px;
 }

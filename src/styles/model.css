@@ -1,0 +1,7 @@
+model-viewer{
+    width: 96vw;
+    height: 75vh;
+    border: solid;
+    border-radius: 1%;
+    border-color: #0078D4;
+}
