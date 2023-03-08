@@ -21,7 +21,4 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
-public/models/alpha-blend-litmus.glb
-public/models/Astronaut.glb
-public/models/BoomBox.glb
-public/models/healthyColon.glb
+
