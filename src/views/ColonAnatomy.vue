@@ -25,40 +25,45 @@
     
     <Divider/>
 
-    <h3>Arterial Supply</h3>
-    <p>In general, the superior mesenteric artery supplies structures derived from the midgut, while the inferior mesenteric artery supplies structures derived from the hindgut.  </p>
-    <p>The ascending colon receives its blood supply from the ileocolic and right colic arteries, both branches of the superior mesenteric artery.  </p>
-    <p>The transverse colon, being derived from both midgut and hindgut, is supplied by the right colic and middle colic arteries from the superior mesenteric artery, as well as the left colic artery from the inferior mesenteric artery.</p>
-    <p>The descending colon is supplied solely by the left colic artery from the inferior mesenteric artery, and the sigmoid colon is supplied by the sigmoid arteries, also from the inferior mesenteric artery. </p>
+    <TabView :scrollable="true">
+        <TabPanel class="tab-header" header="Arterial Supply">
+            <p>In general, the superior mesenteric artery supplies structures derived from the midgut, while the inferior mesenteric artery supplies structures derived from the hindgut.  </p>
+            <p>The ascending colon receives its blood supply from the ileocolic and right colic arteries, both branches of the superior mesenteric artery.  </p>
+            <p>The transverse colon, being derived from both midgut and hindgut, is supplied by the right colic and middle colic arteries from the superior mesenteric artery, as well as the left colic artery from the inferior mesenteric artery.</p>
+            <p>The descending colon is supplied solely by the left colic artery from the inferior mesenteric artery, and the sigmoid colon is supplied by the sigmoid arteries, also from the inferior mesenteric artery. </p>
+        </TabPanel>
 
-    <Divider/>
-    
-    <h3>Venous Drainage</h3>
-    <p>The venous drainage of the colon is similar to the arterial supply: </p>
-    <ul>
-        <li>Ascending colon - ileocolic and right colic veins, which empty into the superior mesenteric vein. </li>
-        <li>Transverse colon - middle colic vein, which empties into the superior mesenteric vein. </li>
-        <li>Descending colon - left colic vein, which drains into the inferior mesenteric vein. </li>
-        <li>Sigmoid colon - drained by the sigmoid veins into the inferior mesenteric vein. </li>
-    </ul>
-    <p>The superior mesenteric and inferior mesenteric veins ultimately empty ultimately empties into the hepatic portal vein, allowing toxins to be processed by the liver. </p>    
+        <TabPanel class="tab-header" header="Venous Drainage">
+            <p>The venous drainage of the colon is similar to the arterial supply: </p>
+            <ul>
+                <li>Ascending colon - ileocolic and right colic veins, which empty into the superior mesenteric vein. </li>
+                <li>Transverse colon - middle colic vein, which empties into the superior mesenteric vein. </li>
+                <li>Descending colon - left colic vein, which drains into the inferior mesenteric vein. </li>
+                <li>Sigmoid colon - drained by the sigmoid veins into the inferior mesenteric vein. </li>
+            </ul>
+            <p>The superior mesenteric and inferior mesenteric veins ultimately empty ultimately empties into the hepatic portal vein, allowing toxins to be processed by the liver. </p>
+        </TabPanel>
 
-    <Divider/>
-
-    <h3>Lymphatic Drainage</h3>
-    <p>The lymphatic drainage of the colon also follows this pattern, with the ascending and transverse colon draining into the superior mesenteric nodes, and the descending colon and sigmoid colon draining into the inferior mesenteric nodes. Most of the lymph from these nodes passes into the intestinal lymph trunks and ultimately empties into the thoracic duct. </p>
+        <TabPanel class="tab-header" header="Lymphatic Drainage">
+            <p>The lymphatic drainage of the colon also follows this pattern, with the ascending and transverse colon draining into the superior mesenteric nodes, and the descending colon and sigmoid colon draining into the inferior mesenteric nodes. Most of the lymph from these nodes passes into the intestinal lymph trunks and ultimately empties into the thoracic duct. </p>
+        </TabPanel>
+    </TabView>
 </template>
 
 <script>
 import Accordion from 'primevue/accordion';
 import AccordionTab from 'primevue/accordiontab';
 import Divider from 'primevue/divider';
+import TabView from 'primevue/tabview';
+import TabPanel from 'primevue/tabpanel';
 
 export default{
     components: {
         Accordion,
         AccordionTab,
-        Divider
+        Divider,
+        TabPanel,
+        TabView
     }
 }
 </script>
