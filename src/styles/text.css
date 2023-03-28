@@ -10,3 +10,7 @@ h1, h3{
 p{
     font-family: Lato;
 }
+
+.next, .previous, .showDialog{
+    font-family: Gloock;
+}

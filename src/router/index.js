@@ -1,7 +1,7 @@
 import {createRouter, createWebHistory} from 'vue-router'
 
 import HomeView from '../views/HomeView'
-import WhatIsCRC from '../views/WhatIsCRC'
+import ColonAnatomy from '../views/ColonAnatomy'
 import StagesOfCRC from '../views/StagesOfCRC'
 import CaseStudies from '../views/CaseStudies'
 import HowToUse from '../views/HowToUse'
@@ -14,9 +14,9 @@ const routes = [
         component: HomeView
     },
     {
-        path: '/what-is-crc',
-        name: 'WhatIsCRC',
-        component: WhatIsCRC
+        path: '/colon-anatomy',
+        name: 'ColonAnatomy',
+        component: ColonAnatomy
     },
     {
         path: '/stages-of-crc',
@@ -41,7 +41,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory(/'colorectal-cancer'/),
+    history: createWebHistory(process.env.BASE_URL),
     routes
 })
 

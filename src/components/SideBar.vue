@@ -5,7 +5,7 @@
     
     <router-link to="/"><Button class="sidebar-item" label="Home" icon="pi pi-home" @click="hideSidebar"/></router-link>
 
-    <router-link to="/what-is-crc"><Button class="sidebar-item" label="What is CRC?" icon="pi pi-question" @click="hideSidebar"/></router-link>
+    <router-link to="/colon-anatomy"><Button class="sidebar-item" label="Anatomy of the Colon" icon="pi pi-user" @click="hideSidebar"/></router-link>
     
     <router-link to="/stages-of-crc"><Button class="sidebar-item" label="Stages of CRC" icon="pi pi-arrows-h" @click="hideSidebar"/></router-link>
     

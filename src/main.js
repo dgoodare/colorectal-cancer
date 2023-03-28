@@ -19,6 +19,8 @@ import './styles/sidebar.css'
 import './styles/model.css'
 import './styles/stages.css'
 import './styles/text.css'
+import './styles/tab-view.css'
+import './styles/case-study.css'
 
 const app = createApp(App);
 app.use(PrimeVue);
