@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       isMounted: false,
-      src: 'models/healthyColon.glb'
+      src: 'models/healthyColon-lit-v1.glb'
     }
   },
   mounted() {

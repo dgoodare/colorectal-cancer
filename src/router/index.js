@@ -1,6 +1,7 @@
 import {createRouter, createWebHistory} from 'vue-router'
 
 import HomeView from '../views/HomeView'
+import ColorectalCancer from '../views/ColorectalCancer'
 import ColonAnatomy from '../views/ColonAnatomy'
 import StagesOfCRC from '../views/StagesOfCRC'
 import CaseStudies from '../views/CaseStudies'
@@ -12,6 +13,11 @@ const routes = [
         path: '',
         name: 'Home',
         component: HomeView
+    },
+    {
+        path: '/colorectal-cancer',
+        name: 'ColorectalCancer',
+        component: ColorectalCancer
     },
     {
         path: '/colon-anatomy',

@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Gloock');
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 h1, h3{
-    font-family: Gloock;
+    font-family: Source Sans Pro;
     text-decoration: underline;
     text-decoration-color: #0078D3;
 }
 
 p{
-    font-family: Lato;
+    font-family: Source Sans Pro;
 }
 
 .next, .previous, .showDialog{
-    font-family: Gloock;
+    font-family: Source Sans Pro;
 }

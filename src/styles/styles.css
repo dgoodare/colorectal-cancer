@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html{
+    background-color: aliceblue;
+}
+
+h1, h3{
+    font-family: Source Sans Pro;
+    text-decoration: underline;
+    text-decoration-color: #0078D3;
+}
+
+p{
+    font-family: Source Sans Pro;
+}
+
+.next, .previous, .showDialog{
+    font-family: Source Sans Pro;
+}
+
+.open-sidebar{
+    position: fixed;
+    top: 1%;
+    left: 1%;
+}
+
+.sidebar-item{
+    display: block;
+    width: 100%;
+    margin: 1%;
+    text-align: start;
+    font-family: Source Sans Pro;
+}
+a{
+    text-decoration: none;
+}
+
+.stage-container{
+    border: solid;
+    border-color: #0078D4;
+}
+
+#toggle-model{
+    border: none;
+}
+
+.btn-container{
+    border-top: solid;
+    border-color: #0078D4;
+    width: 100%;
+}
+
+.stage-btn{
+    margin: 2% 0% 2% 0%;
+    font-family: Source Sans Pro;
+}
+
+Toolbar{
+    width: 50%;
+}
+
+model-viewer{
+    width: 96vw;
+    height: 75vh;
+    border: solid;
+    border-radius: 1%;
+    border-color: #0078D4;
+    background-color: lightgray;
+}
+
+.dialog-toolbar{
+    background-color: none;
+    right: 15%;
+    position: fixed;
+    bottom: 1%;
+    width: 70%;
+    height: fit-content;
+    padding: 2% 1% 2% 1%;
+}
+
+.toolbar-btn{
+    align-content: center;
+    margin: 0% 2% 0% 2%;
+}
+
+model-viewer{
+    width: 96vw;
+    height: 75vh;
+    border: solid;
+    border-radius: 1%;
+    border-color: #0078D4;
+}
+
+.study-toolbar{
+    border: none;
+    background: none;
+    background-color: none;
+}
+
+.showDialog{
+    width: 100%;
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    .home-container, .stage-container, .accordian-container, p, ul{width: 60%};
+}
+
+

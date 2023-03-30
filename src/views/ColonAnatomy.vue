@@ -4,7 +4,7 @@
     <p>The colon (large intestine) is the most distal part of the digestive system. The length of the colon is about 150 cm long. It connects to the ileum of the small intestine and extends through the abdominal cavity and terminates at the anus. The main function of the colon is to absorb water and electrolytes from the digested food it receives from the ileum, forming stool which will be excreted through the anus.  </p>
     <h3>Gross Anatomy</h3>
     <p>The colon is divided into seven parts (proximal to distal): ceacum, ascending colon, transverse colon, descending colon, sigmoid colon, rectum, anal canal.  </p>
-    <Accordion>
+    <Accordion class="accordian-container">
         <AccordionTab header="Ceacum">
             <p>The ceacum lies retroperitoneally in the right side of the abdomen in the right iliac fosa. It connects to the ileum through an opening called the ileoceacal valve.  </p>
         </AccordionTab>

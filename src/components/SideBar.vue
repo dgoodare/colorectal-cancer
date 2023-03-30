@@ -2,10 +2,11 @@
 
 <Button class="open-sidebar" icon="pi pi-bars" @click="showSidebar"/>
 <Sidebar v-model:visible="visibleLeft" position="left" dismissable="true">
-    
     <router-link to="/"><Button class="sidebar-item" label="Home" icon="pi pi-home" @click="hideSidebar"/></router-link>
 
-    <router-link to="/colon-anatomy"><Button class="sidebar-item" label="Anatomy of the Colon" icon="pi pi-user" @click="hideSidebar"/></router-link>
+    <router-link to="/colorectal-cancer"><Button class="sidebar-item" label="Colorectal Cancer" icon="pi pi-times-circle" @click="hideSidebar"/></router-link>
+
+    <router-link to="/colon-anatomy"><Button class="sidebar-item" label="Anatomy of the colon" icon="pi pi-user" @click="hideSidebar"/></router-link>
     
     <router-link to="/stages-of-crc"><Button class="sidebar-item" label="Stages of CRC" icon="pi pi-arrows-h" @click="hideSidebar"/></router-link>
     
