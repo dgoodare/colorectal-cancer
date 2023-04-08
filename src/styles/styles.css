@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
-html{
-    background-color: aliceblue;
-}
-
 h1, h3{
     font-family: Source Sans Pro;
     text-decoration: underline;
@@ -46,8 +42,10 @@ a{
 
 .btn-container{
     border-top: solid;
+    border-bottom: solid;
     border-color: #0078D4;
-    width: 100%;
+    width: 96vw;
+    background-color: none;
 }
 
 .stage-btn{
@@ -65,7 +63,6 @@ model-viewer{
     border: solid;
     border-radius: 1%;
     border-color: #0078D4;
-    background-color: lightgray;
 }
 
 .dialog-toolbar{
@@ -104,7 +101,7 @@ model-viewer{
 
 
 @media only screen and (min-width: 1000px) {
-    .home-container, .stage-container, .accordian-container, p, ul{width: 60%};
+    .home-container, .accordian-container, p, ul{width: 60%};
 }
 
 

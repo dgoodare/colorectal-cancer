@@ -1,9 +1,9 @@
 <template>
     <div class="stage-container">
         <model-viewer
-            id="toggle-model"
+            id="toggle-model-top"
             v-if="isMounted" 
-            :src="src"
+            :src="srcTop"
             camera-controls>
         </model-viewer>
 
@@ -21,6 +21,13 @@
               </template>
             </Toolbar>
         </div>
+
+        <model-viewer
+            id="toggle-model-bottom"
+            v-if="isMounted" 
+            :src="srcBottom"
+            camera-controls>
+        </model-viewer>
     </div>
   </template>
   
@@ -32,12 +39,13 @@
     name: 'StagesComponent',
     components: {
         Button,
-        Toolbar
+        Toolbar,
     },
     data() {
       return {
         isMounted: false,
-        src: 'models/Astronaut.glb',
+        srcTop: 'models/Astronaut.glb',
+        srcBottom: 'models/alpha-blend-litmus.glb',
       }
     },
     mounted() {
@@ -51,11 +59,15 @@
     },
     methods: {
         setStage(stage) {
-            const toggleModel = document.querySelector('#toggle-model')
+            const toggleModelTop = document.querySelector('#toggle-model-top')
+            const toggleModelBottom = document.querySelector('#toggle-model-bottom')
+
             const models = ['models/Astronaut.glb', 
                             'models/alpha-blend-litmus.glb', 
                             'models/BoomBox.glb']
-            toggleModel.setAttribute('src', models[stage])
+
+            toggleModelTop.setAttribute('src', models[stage])
+            toggleModelBottom.setAttribute('src', models[(stage + 1) % 3])
             console.log(this.model[stage])
         }
     }
