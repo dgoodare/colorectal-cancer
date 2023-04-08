@@ -31,25 +31,25 @@ a{
     text-decoration: none;
 }
 
-.stage-container{
-    border: solid;
-    border-color: #0078D4;
-}
+
 
 #toggle-model{
     border: none;
 }
 
 .btn-container{
-    border-top: solid;
-    border-bottom: solid;
+    border-left: solid;
+    border-right: solid;
     border-color: #0078D4;
+    border-radius: 1%;
     width: 96vw;
     background-color: none;
 }
 
 .stage-btn{
-    margin: 2% 0% 2% 0%;
+    text-align: center;
+    margin: 2% 2% 2% 2%;
+    border: 0% 2% 0% 2%;
     font-family: Source Sans Pro;
 }
 
@@ -96,6 +96,11 @@ model-viewer{
 
 .showDialog{
     width: 100%;
+}
+
+.case-study-btn{
+    width: 100%;
+    margin: 2% 0% 2% 0%;
 }
 
 
