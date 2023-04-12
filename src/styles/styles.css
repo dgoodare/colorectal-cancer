@@ -10,10 +10,6 @@ p{
     font-family: Source Sans Pro;
 }
 
-.next, .previous, .showDialog{
-    font-family: Source Sans Pro;
-}
-
 .open-sidebar{
     position: fixed;
     top: 1%;
@@ -47,10 +43,12 @@ a{
 }
 
 .stage-btn{
-    text-align: center;
-    margin: 2% 2% 2% 2%;
-    border: 0% 2% 0% 2%;
+    border: 2% 2% 2% 2%;
     font-family: Source Sans Pro;
+}
+
+.stage-btn + .stage-btn{
+    margin-left: 10px;
 }
 
 Toolbar{
@@ -92,6 +90,10 @@ model-viewer{
     border: none;
     background: none;
     background-color: none;
+    padding: 0px;
+}
+.next, .previous, .showDialog{
+    font-family: Source Sans Pro;
 }
 
 .showDialog{
@@ -103,6 +105,17 @@ model-viewer{
     margin: 2% 0% 2% 0%;
 }
 
+.case-study-card{
+    height: 87vh;
+}
+
+.case-study-header{
+    margin: 2%;
+}
+.case-name{
+    font-size: medium;
+    color: gray;
+}
 
 
 @media only screen and (min-width: 1000px) {
