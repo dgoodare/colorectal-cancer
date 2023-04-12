@@ -96,6 +96,9 @@
                 <template #start>
                     <Button class="previous" label="Previous" @click="showcolonoscopy()"></Button>
                 </template>
+                <template #end>
+                    <Button class="next" label="Next" @click="showStaging()"></Button>
+                </template>
             </Toolbar> 
              
             <h3 class="case-study-header">Management</h3>
@@ -109,6 +112,31 @@
             <Dialog v-model:visible="management" :style="{ width: '90vw' }" @after-hide="showManagement()">
                 <p>The sigmoid colon is supplied by the sigmoid arteries, which derives from the inferior mesenteric artery.</p>
                 <p>The rectum has blood supply from superior and inferior rectal arteries. Superior rectal artery is a branch of the inferior mesenteric artery while inferior rectal artery is a branch of the internal iliac artery.</p>
+            </Dialog>
+    
+            
+            
+        </template>
+    </Card>
+
+    <Card class="case-study-card" id="staging" style="display: none">
+        <template #title>
+            <p class="case-name">Case 2</p> 
+            <Toolbar class="study-toolbar">
+                <template #start>
+                    <Button class="previous" label="Previous" @click="showManagement()"></Button>
+                </template>
+            </Toolbar> 
+             
+            <h3 class="case-study-header">Staging</h3>
+        </template>
+        <template #content>
+            <img class="case-study-img" src="case-studies/case-2-staging.jpg">
+            <p>Which stage of colorectal cancer does this indicate?</p>
+    
+            <Button class="showDialog" label="Show Answer" @click="stagingDialog()"></Button>
+            <Dialog v-model:visible="staging" :style="{ width: '90vw' }" @after-hide="showStaging()">
+                <p>T1: Tumour has invaded the submucosa, but not the muscularis externa.</p>
             </Dialog>
     
             
@@ -135,7 +163,8 @@
                     intro: false,
                     consultation: false,
                     colonoscopy: false,
-                    management: false
+                    management: false,
+                    staging: false
                 }
             },
         methods: {
@@ -144,44 +173,65 @@
                 var consultation = document.getElementById("consultation")
                 var colonoscopy = document.getElementById("colonoscopy")
                 var management = document.getElementById("management")
+                var staging = document.getElementById("staging")
     
                 intro.style.display = "block"
                 consultation.style.display = "none"
                 colonoscopy.style.display = "none"
                 management.style.display = "none"
+                staging.style.display = "none"
             },
             showconsultation(){
                 var intro = document.getElementById("introduction")
                 var consultation = document.getElementById("consultation")
                 var colonoscopy = document.getElementById("colonoscopy")
                 var management = document.getElementById("management")
+                var staging = document.getElementById("staging")
     
                 intro.style.display = "none"
                 consultation.style.display = "block"
                 colonoscopy.style.display = "none"
                 management.style.display = "none"
+                staging.style.display = "none"
             },
             showcolonoscopy(){
                 var intro = document.getElementById("introduction")
                 var consultation = document.getElementById("consultation")
                 var colonoscopy = document.getElementById("colonoscopy")
                 var management = document.getElementById("management")
+                var staging = document.getElementById("staging")
     
                 intro.style.display = "none"
                 consultation.style.display = "none"
                 colonoscopy.style.display = "block"
                 management.style.display = "none"
+                staging.style.display = "none"
             },
             showManagement(){
                 var intro = document.getElementById("introduction")
                 var consultation = document.getElementById("consultation")
                 var colonoscopy = document.getElementById("colonoscopy")
                 var management = document.getElementById("management")
+                var staging = document.getElementById("staging")
     
                 intro.style.display = "none"
                 consultation.style.display = "none"
                 colonoscopy.style.display = "none"
                 management.style.display = "block"
+                staging.style.display = "none"
+            },
+            showStaging(){
+                var intro = document.getElementById("introduction")
+                var consultation = document.getElementById("consultation")
+                var colonoscopy = document.getElementById("colonoscopy")
+                var management = document.getElementById("management")
+                var staging = document.getElementById("staging")
+    
+                intro.style.display = "none"
+                consultation.style.display = "none"
+                colonoscopy.style.display = "none"
+                management.style.display = "none"
+                staging.style.display = "block"
             },
             introDialog(){
                 this.intro = true;
@@ -194,6 +244,9 @@
             },
             managementDialog(){
                 this.management = true;
+            },
+            stagingDialog(){
+                this.staging = true;
             }
         }
     }

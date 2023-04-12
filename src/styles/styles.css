@@ -106,7 +106,7 @@ model-viewer{
 }
 
 .case-study-card{
-    height: 87vh;
+    min-height: 87vh;
 }
 
 .case-study-header{
@@ -115,6 +115,10 @@ model-viewer{
 .case-name{
     font-size: medium;
     color: gray;
+}
+
+.case-study-img{
+    max-width: 89vw;
 }
 
 

@@ -86,8 +86,8 @@
         stage: false,
         histology: 0,
         isMounted: false,
-        srcTop: 'models/Astronaut.glb',
-        srcBottom: 'models/alpha-blend-litmus.glb',
+        srcTop: 'models/stages/stage-1-m.glb',
+        srcBottom: 'models/stages/stage-1-s.glb',
       }
     },
     mounted() {
@@ -105,12 +105,18 @@
             const toggleModelTop = document.querySelector('#toggle-model-top')
             const toggleModelBottom = document.querySelector('#toggle-model-bottom')
 
-            const models = ['models/Astronaut.glb', 
-                            'models/alpha-blend-litmus.glb', 
-                            'models/BoomBox.glb']
+            const modelsMedium = ['models/stages/stage-1-m-v1.glb', 
+                                  'models/stages/stage-2-m-v1.glb',
+                                  'models/stages/stage-3-m-v1.glb',
+                                  'models/stages/stage-4-m-v1.glb',]
+            
+            const modelsSmall = [ 'models/stages/stage-1-s-v1.glb', 
+                                  'models/stages/stage-2-s-v1.glb',
+                                  'models/stages/stage-3-s-v1.glb',
+                                  'models/stages/stage-4-s-v1.glb',]
 
-            toggleModelTop.setAttribute('src', models[stage % 3])
-            toggleModelBottom.setAttribute('src', models[(stage + 1) % 3])
+            toggleModelTop.setAttribute('src', modelsMedium[stage])
+            toggleModelBottom.setAttribute('src', modelsSmall[stage])
         },
         showHistology(){
           if (this.histology == 0)

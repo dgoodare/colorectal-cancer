@@ -70,7 +70,7 @@
                 <Button class="previous" label="Previous" @click="showHistory1()"></Button>
             </template>
             <template #end>
-                <Button class="next" label="Next" @click="showManagement1()"></Button>
+                <Button class="next" label="Next" @click="showColonoscopy()"></Button>
             </template>
         </Toolbar>
         
@@ -101,12 +101,42 @@
     </template>
 </Card>
 
-<Card class="case-study-card" id="management" style="display: none">
+<Card class="case-study-card" id="colonoscopy" style="display: none">
     <template #title>
         <p class="case-name">Case 1</p>
         <Toolbar class="study-toolbar">
             <template #start>
                 <Button class="previous" label="Previous" @click="showDiagnosis1()"></Button>
+            </template>
+            <template #end>
+                <Button class="next" label="Next" @click="showManagement1()"></Button>
+            </template>
+        </Toolbar>   
+        
+        <h3 class="case-study-header">Colonoscopy</h3>
+    </template>
+    <template #content>
+        
+
+        <Button class="showDialog" label="Show Answer" @click="colonoscopyDialog()"></button>
+        <Dialog v-model:visible="colonoscopy" :style="{ width: '90vw' }" @after-hide="showColonoscopy()">
+            
+        </Dialog>
+
+        
+        
+    </template>
+</Card>
+
+<Card class="case-study-card" id="management" style="display: none">
+    <template #title>
+        <p class="case-name">Case 1</p>
+        <Toolbar class="study-toolbar">
+            <template #start>
+                <Button class="previous" label="Previous" @click="showColonoscopy()"></Button>
+            </template>
+            <template #end>
+                <Button class="next" label="Next" @click="showStaging()"></Button>
             </template>
         </Toolbar>   
         
@@ -132,6 +162,28 @@
         
     </template>
 </Card>
+
+<Card class="case-study-card" id="staging" style="display: none">
+    <template #title>
+        <p class="case-name">Case 1</p>
+        <Toolbar class="study-toolbar">
+            <template #start>
+                <Button class="previous" label="Previous" @click="showManagement1()"></Button>
+            </template>
+        </Toolbar>   
+        
+        <h3 class="case-study-header">Staging</h3>
+    </template>
+    <template #content>
+        <img>
+        <p>Which stage of colorectal cancer does this indicate?</p>
+
+        <Button class="showDialog" label="Show Answer" @click="stagingDialog()"></button>
+        <Dialog v-model:visible="management" :style="{ width: '90vw' }" @after-hide="showStaging()">
+            <p>T1: Tumour has invaded the submucosa, but not the muscularis externa.</p>
+        </Dialog>
+    </template>
+</Card>
 </template>
 
 <script>
@@ -151,7 +203,9 @@ export default {
             return {
                 history: false,
                 diagnosis: false,
-                management: false
+                colonoscopy: false,
+                management: false,
+                staging: false,
             }
         },
     methods: {
@@ -159,45 +213,91 @@ export default {
             var intro = document.getElementById("introduction")
             var history = document.getElementById("history")
             var diagnosis = document.getElementById("diagnosis")
+            var colonoscopy = document.getElementById("colonoscopy")
             var management = document.getElementById("management")
+            var staging = document.getElementById("staging")
 
             intro.style.display = "block"
             history.style.display = "none"
             diagnosis.style.display = "none"
+            colonoscopy.style.display = "none"
             management.style.display = "none"
+            staging.style.display = "none"
         },
         showHistory1(){
             var intro = document.getElementById("introduction")
             var history = document.getElementById("history")
             var diagnosis = document.getElementById("diagnosis")
+            var colonoscopy = document.getElementById("colonoscopy")
             var management = document.getElementById("management")
+            var staging = document.getElementById("staging")
 
             intro.style.display = "none"
             history.style.display = "block"
             diagnosis.style.display = "none"
+            colonoscopy.style.display = "none"
             management.style.display = "none"
+            staging.style.display = "none"
         },
         showDiagnosis1(){
             var intro = document.getElementById("introduction")
             var history = document.getElementById("history")
             var diagnosis = document.getElementById("diagnosis")
+            var colonoscopy = document.getElementById("colonoscopy")
             var management = document.getElementById("management")
+            var staging = document.getElementById("staging")
 
             intro.style.display = "none"
             history.style.display = "none"
             diagnosis.style.display = "block"
+            colonoscopy.style.display = "none"
             management.style.display = "none"
+            staging.style.display = "none"
+        },
+        showColonoscopy(){
+            var intro = document.getElementById("introduction")
+            var history = document.getElementById("history")
+            var diagnosis = document.getElementById("diagnosis")
+            var colonoscopy = document.getElementById("colonoscopy")
+            var management = document.getElementById("management")
+            var staging = document.getElementById("staging")
+
+            intro.style.display = "none"
+            history.style.display = "none"
+            diagnosis.style.display = "none"
+            colonoscopy.style.display = "block"
+            management.style.display = "none"
+            staging.style.display = "none"
         },
         showManagement1(){
             var intro = document.getElementById("introduction")
             var history = document.getElementById("history")
             var diagnosis = document.getElementById("diagnosis")
+            var colonoscopy = document.getElementById("colonoscopy")
             var management = document.getElementById("management")
+            var staging = document.getElementById("staging")
 
             intro.style.display = "none"
             history.style.display = "none"
             diagnosis.style.display = "none"
+            colonoscopy.style.display = "none"
             management.style.display = "block"
+            staging.style.display = "none"
+        },
+        showStaging(){
+            var intro = document.getElementById("introduction")
+            var history = document.getElementById("history")
+            var diagnosis = document.getElementById("diagnosis")
+            var colonoscopy = document.getElementById("colonoscopy")
+            var management = document.getElementById("management")
+            var staging = document.getElementById("staging")
+
+            intro.style.display = "none"
+            history.style.display = "none"
+            diagnosis.style.display = "none"
+            colonoscopy.style.display = "none"
+            management.style.display = "none"
+            staging.style.display = "block"
         },
         historyDialog(){
             this.history = true;
@@ -205,8 +305,14 @@ export default {
         diagnosisDialog(){
             this.diagnosis = true;
         },
+        colonoscopyDialog(){
+            this.colonoscopy = true;
+        },
         managementDialog(){
             this.management = true;
+        },
+        stagingDialog(){
+            this.staging = true;
         }
     }
 }

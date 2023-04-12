@@ -139,21 +139,11 @@
         <template #content>
             <p><b>Abdominal X-ray</b></p>
             <p>The large bowel is gas filled and distended down to the level of the distal descending colon-sigmoid. Consistent with large bowel obstruction.</p>
-            <img>
+            <img class="case-study-img" src="case-studies/case-3-xray.jpg">
             
             <p><b>CT Scan</b></p>
             <p>Circumferential wall thickening (15 mm) of the rectosigmoid junction for a length of about 5 cm, with near complete obstruction of the lumen and gross proximal large bowel dilatationn.</p>
-    
-            <Button class="showDialog" label="Show Answer" @click="imagingDialog()"></Button>
-            <Dialog v-model:visible="imaging" :style="{ width: '90vw' }" @after-hide="showImaging()">
-                <ol>
-                    <li>Nutritional deficiency: iron, folic acid, and vitamin B12.</li>
-                    <li>Gastrointestinal bleeding: Ulcers, diverticulitis, inflammatory bowel disease, and colorectal cancer.</li>
-                    <li>Chronic kidney disease</li>
-                    <li>Hemolysis</li>
-                    <li>Thalassemia</li>
-                </ol>
-            </Dialog>
+            <img class="case-study-img" src="case-studies/case-3-ct.jpg">
         </template>
     </Card>
     
@@ -197,14 +187,15 @@
             <h3 class="case-study-header">Staging</h3>
         </template>
         <template #content>
-            <img>
-            <img>
+            <img class="case-study-img" src="case-studies/case-3-staging1.jpg">
+            <img class="case-study-img" src="case-studies/case-3-staging2.jpg">
             <p>Which stage of colorectal cancer does this indicate?</p>
     
             <Button class="showDialog" label="Show Answer" @click="stagingDialog()"></Button>
             <Dialog v-model:visible="staging" :style="{ width: '90vw' }" @after-hide="showStaging()">
-               <p>The ascending colon receives its blood supply from the ileocolic and right colic arteries, both branches of the superior mesenteric artery.</p>
-               <p>The transverse colon, being derived from both midgut and hindgut, is supplied by the right colic and middle colic arteries from the superior mesenteric artery, as well as the left colic artery from the inferior mesenteric artery.</p>
+               <p>Patient has a T4 tumour on the sigmoid colon.</p>
+               <p>Tumour has directly invaded other organs (i.e. not through metastasis, but as a continuous tumour) or has perforated the serosa of the colon (and thus is now exposed to the peritoneal cavity).</p>
+               <p>2 of the regional lymph nodes shows presence of cancerous cells. This indicates N1 stage.</p>
             </Dialog>
         </template>
     </Card>
@@ -228,7 +219,7 @@
                     history: false,
                     diagnosis: false,
                     investigation: false,
-                    imaging: false,
+                    //imaging: false,
                     management: false,
                     staging: false
                 }
@@ -361,9 +352,6 @@
             },
             investigationDialog(){
                 this.investigation = true;
-            },
-            imagingDialog(){
-                this.imaging = true;
             },
             managementDialog(){
                 this.management = true;
