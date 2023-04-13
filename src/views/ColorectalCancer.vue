@@ -44,6 +44,16 @@
             <p>The gold standard investigation for suspected colorectal cancer is a colonoscopy which enables the entire large bowel to be visualised and any suspicious lesions or growths to be biopsied.  </p>
         </TabPanel>
     </TabView>
+
+    <h2>Colorectal Polyps</h2>
+    <p>A polyp is a protrusion above the epithelial surface, it is a tumour, but it can be benign or malignant. Bowel polyps are incredibly common affecting 1 in 4 people above the age of 50. They are often asymptomatic and picked up during the Bowel Screening Programme.</p>
+    <img src="polyps.png" style="max-width: 100%;">
+    <h3>Adenomas</h3>
+    <p>Most polyps found in the bowel are adenomas. All adenomas are dysplastic, meaning they are an example of abnormal cell growth. They are benign tumours that are not invasive and do not metastasise.</p>
+    <h3>Adenoma-carcinoma Sequence</h3>
+    <p>However, adenomas can undergo malignant change becoming cancerous. Malignant change is seen when these cells show cellular atypia and are no longer morphologically normal. The only way you can differentiate between an adenoma and adenocarcinoma is by excision and histological assessment to look for these preneoplastic changes.</p>
+    <p>It is widely accepted that this adenoma-carcinoma sequence is the process by which most colorectal cancers arise.</p>
+    <p>Due to their premalignant potential all adenomas must be removed either endoscopically or surgically.</p>
 </template>
 
 <script>

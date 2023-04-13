@@ -34,33 +34,77 @@
         </model-viewer>
     </div>
 
-    
+    <h3>General colon histology</h3>
+    <p>The 4 layers of the colon are:</p>
+    <ul>
+      <li>Mucosa</li>
+      <li>Submucosa</li>
+      <li>Muscularis externa</li>
+      <li>Serosa</li>
+    </ul>
+    <p>Depending on the layer that the tumour penetrates and/or the lymph nodes affected determines the colorectal cancer stage.</p>
 
     <Dialog v-model:visible="stage1" modal header="Stage 1 Histology" :style="{ width: '95vw' }">
-        <p>TNM Stage: T1N0M0</p>
-        <p>Clinical Stage: 1</p>
-        <p>5-year survival prognosis: 95%</p>
+        <p><em>TNM Stage:</em></p>
+        <p>T1 or T2, N0, M0</p>
+        <p><em>Are lymph nodes affected?</em> </p>
+        <p>No</p>
+        <p><em>Where is the tumour located?</em></p>
+        <p> Within the submucosa (T1) or embedded within the muscularis externa (T2)</p>
+        <p><em>5-year survival prognosis:</em></p>
+        <p>90%</p>
 
-        <Image src="histology/stage1-1.png" />
-        <Image src="histology/stage1-2.png" />
+        <img class="histology-img" src="histology/stage-1/1-1.png" />
+        <img class="histology-img" src="histology/stage-1/1-2.png" />
     </Dialog>
+
     <Dialog v-model:visible="stage2" modal header="Stage 2 Histology" :style="{ width: '95vw' }">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+      <p><em>TNM Stage:</em></p>
+      <p>T3 or T4, N0, M0</p>
+        <p><em>Are lymph nodes affected?</em></p>
+        <p>No</p>
+        <p><em>Where is the tumour located?</em></p>
+        <p>Either within the connective tissue (T3) or has perforated the serosa and or adjacent organs (T4)</p>
+        <p><em>5-year survival prognosis:</em></p>
+        <p>80%</p>
+
+        <img class="histology-img" src="histology/stage-2/2-1.png">
+        <p class="ref">(Fleming et al, 2012)</p>
+
+        <p>Here you can see that the tumour cells are close to the serosal surface but not quite there yet.  This may be considered T4 by some physicians.</p>
     </Dialog>
+
     <Dialog v-model:visible="stage3" modal header="Stage 3 Histology" :style="{ width: '95vw' }">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+      <p><em>TNM Stage:</em></p>
+      <p>Any T, N1 or N2, M0</p>
+        <p><em>Are lymph nodes affected?</em></p>
+        <p>Yes</p>
+        <p><em>Where is the tumour located?</em></p>
+        <p>Can be located anywhere within the colon layers with cancer spreading to nearby lymph nodes</p>
+        <p><em>5-year survival prognosis:</em></p>
+        <p>70%</p>
+
+        <img class="histology-img" src="histology/stage-3/3-1.png">
+        <img class="histology-img" src="histology/stage-3/3-2.png">
+
+        <p>Here the cancer has spread into the submucosa but not into the muscularis externa. It has also spread to neighbouring lymph nodes.  Therefore, these images would have a TNM staging of T1, N1, M0</p>
     </Dialog>
+
     <Dialog v-model:visible="stage4" modal header="Stage 4 Histology" :style="{ width: '95vw' }">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+      <p><em>TNM Stage:</em></p>
+      <p>Any T, Any N, M1</p>
+        <p><em>Are lymph nodes affected?</em></p>
+        <p>Normally but not always</p>
+        <p><em>Where is the tumour located?</em></p>
+        <p>Cancer can be at any size and will have spread to organs like the lungs or liver.  It can spread into distant lymph nodes, but this is not always the case.</p>
+        <p><em>5-year survival prognosis:</em></p>
+        <p>10%</p>
+
+        <img class="histology-img" src="histology/stage-4/4-1.png">
+        <p>An example of a sample that is T4.</p>
+        <p>In Stage 4 patients, other organs like the liver contain tumour cells.  Below are examples of what liver metastasis might look like.</p>
+        <img class="histology-img" src="histology/stage-4/4-2.png">
+        <p class="ref">(Oliveria et al 2019)</p>
     </Dialog>
   </template>
   
@@ -68,7 +112,6 @@
     import Button from 'primevue/button'
     import Toolbar from 'primevue/toolbar';
     import Dialog from 'primevue/dialog';
-    import Image from 'primevue/image'
 
   export default {
     name: 'StagesComponent',
@@ -76,18 +119,17 @@
         Button,
         Toolbar,
         Dialog,
-        Image
     },
     data() {
       return {
         stage1: false,
         stage2: false,
         stage3: false,
-        stage: false,
+        stage4: false,
         histology: 0,
         isMounted: false,
-        srcTop: 'models/stages/stage-1-m.glb',
-        srcBottom: 'models/stages/stage-1-s.glb',
+        srcTop: 'models/stages/stage-1-m-v1.glb',
+        srcBottom: 'models/stages/stage-1-s-v1.glb',
       }
     },
     mounted() {

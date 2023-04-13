@@ -179,7 +179,7 @@
         <p>Which stage of colorectal cancer does this indicate?</p>
 
         <Button class="showDialog" label="Show Answer" @click="stagingDialog()"></button>
-        <Dialog v-model:visible="management" :style="{ width: '90vw' }" @after-hide="showStaging()">
+        <Dialog v-model:visible="staging" :style="{ width: '90vw' }" @after-hide="showStaging()">
             <p>T1: Tumour has invaded the submucosa, but not the muscularis externa.</p>
         </Dialog>
     </template>

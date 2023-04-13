@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
-h1, h3{
+h1, h2, h3{
     font-family: Source Sans Pro;
     text-decoration: underline;
     text-decoration-color: #0078D3;
@@ -11,6 +11,7 @@ p{
 }
 
 .open-sidebar{
+    z-index: 99 !important; 
     position: fixed;
     top: 1%;
     left: 1%;
@@ -121,6 +122,16 @@ model-viewer{
     max-width: 89vw;
 }
 
+.histology-img{
+    max-width: 80vw;
+}
+
+.ref{
+    padding:0%;
+    margin: 0%;
+    font-size: small;
+    font-weight: lighter;
+}
 
 @media only screen and (min-width: 1000px) {
     .home-container, .accordian-container, p, ul{width: 60%};
