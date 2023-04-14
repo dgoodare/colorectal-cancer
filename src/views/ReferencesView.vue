@@ -1,6 +1,6 @@
 <template>
     <title>References</title>
-<h1 id="sticky-header">References</h1>
+    <h1>References</h1>
 
 <p><b>Basic Colon Anatomy</b></p>
 <ul>

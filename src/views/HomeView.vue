@@ -1,6 +1,6 @@
 <template>
     <title>Home</title>
-    <h1 id="sticky-header">Home</h1>
+    <h1>Home</h1>
     <ModelView class="home-container" />  
     <p>
         Colorectal cancer is defined as cancer of the colon, rectum, or bowel. It is the 4th most common cancer in the UK. Over the years survival rates have improved with a current 5-year survival rate of 60%. 

@@ -1,6 +1,6 @@
 <template>
     <title>How to use</title>
-<h1 id="sticky-header">How To Use This App</h1>
+<h1>How To Use This App</h1>
 
 <p>There are a number of ways in which the website can be used in both a group and individual manner.  This tool can also be used an adjunctive study tool in the case of individual study. </p>
 
