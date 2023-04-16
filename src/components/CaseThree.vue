@@ -190,6 +190,7 @@
             <img class="case-study-img" src="case-studies/case-3-staging1.jpg">
             <img class="case-study-img" src="case-studies/case-3-staging2.jpg">
             <p>Which stage of colorectal cancer does this indicate?</p>
+            <p>You may want use the <router-link to="/stages-of-crc">3D models</router-link> to help answer this question</p>
     
             <Button class="showDialog" label="Show Answer" @click="stagingDialog()"></Button>
             <Dialog v-model:visible="staging" :style="{ width: '90vw' }" @after-hide="showStaging()">

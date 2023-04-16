@@ -116,15 +116,15 @@
         <h3 class="case-study-header">Colonoscopy</h3>
     </template>
     <template #content>
-        
+        <p>Colonoscopy showed a suspicious lesion on the ascending colon.</p>
+        <p>Biopsy of the lesion confirms the diagnosis of adenocarcinoma.</p>
 
-        <Button class="showDialog" label="Show Answer" @click="colonoscopyDialog()"></button>
-        <Dialog v-model:visible="colonoscopy" :style="{ width: '90vw' }" @after-hide="showColonoscopy()">
-            
-        </Dialog>
+        <p><b>CT Scan</b></p>
 
-        
-        
+        <img class="case-study-img" src="case-studies/case-1-colonoscopy.png">
+        <p class="ref">Image courtesy of Mohammadtaghi Niknejad. From the case <a href="https://radiopaedia.org/cases/98802?lang=us">rID: 98802</a></p>
+
+        <p>Marked increased wall thickness suggestive of tumor infiltration is present at the cecum, proximal ascending colon, and the distal portion of the ileum</p>
     </template>
 </Card>
 
@@ -175,12 +175,13 @@
         <h3 class="case-study-header">Staging</h3>
     </template>
     <template #content>
-        <img>
+        <img class="case-study-img" src="case-studies/case-1-staging.png">
         <p>Which stage of colorectal cancer does this indicate?</p>
+        <p>You may want use the <router-link to="/stages-of-crc">3D models</router-link> to help answer this question</p>
 
         <Button class="showDialog" label="Show Answer" @click="stagingDialog()"></button>
         <Dialog v-model:visible="staging" :style="{ width: '90vw' }" @after-hide="showStaging()">
-            <p>T1: Tumour has invaded the submucosa, but not the muscularis externa.</p>
+            <p>T2: Tumour has invaded the muscularis externa but has not extended beyond it.</p>
         </Dialog>
     </template>
 </Card>
