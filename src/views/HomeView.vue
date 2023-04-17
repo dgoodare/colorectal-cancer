@@ -1,9 +1,13 @@
 <template>
     <title>Home</title>
-    <h1 id="sticky-header">Home</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in leo at dui malesuada facilisis aliquam eu purus. Quisque interdum sagittis metus a dapibus. Duis a ex lacus. Vestibulum fermentum at dolor eu ornare. Nam aliquet dolor ut lacus faucibus, id finibus erat scelerisque.</p>
-    <ModelView />
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in leo at dui malesuada facilisis aliquam eu purus. Quisque interdum sagittis metus a dapibus. Duis a ex lacus. Vestibulum fermentum at dolor eu ornare. Nam aliquet dolor ut lacus faucibus, id finibus erat scelerisque.</p>
+    <h1>Home</h1>
+    <ModelView class="home-container" />  
+    <p>
+        Colorectal cancer is defined as cancer of the colon, rectum, or bowel. It is the 4th most common cancer in the UK. Over the years survival rates have improved with a current 5-year survival rate of 60%. 
+    </p>
+    <p>
+        There are various risk factors which can impact the likelihood of colorectal cancer development. However, two of the most important risk factors include increasing age; more than 40% of bowel cancers cases are diagnosed in those aged 75 years and obesity; 11% of bowel cancer cases in the UK are linked to obesity.  
+    </p>      
 </template>
 
 <script>

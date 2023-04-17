@@ -14,11 +14,7 @@ import 'primevue/resources/themes/fluent-light/theme.css'       //theme
 import 'primevue/resources/primevue.min.css'                 //core css
 import 'primeicons/primeicons.css'                           //icons
 
-import './styles/dialog-toolbar.css' 
-import './styles/sidebar.css'
-import './styles/model.css'
-import './styles/stages.css'
-import './styles/text.css'
+import './styles/styles.css'
 
 const app = createApp(App);
 app.use(PrimeVue);

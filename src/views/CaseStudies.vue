@@ -1,10 +1,24 @@
 <template>
 <h1 id="sticky-header">Case Studies</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque ligula, lacinia luctus dapibus a, fringilla ac felis. Vivamus sit amet venenatis est. Ut at purus a diam hendrerit tristique. Sed laoreet lacus id dignissim molestie. Vivamus iaculis, erat sit amet rhoncus suscipit, eros lorem hendrerit ligula, nec ornare felis neque in est. Vivamus fermentum sed ipsum quis tempor. Integer viverra nulla quam, eu aliquam ligula molestie lobortis. Etiam consectetur congue lectus nec lobortis. Mauris pretium, ipsum in pretium dapibus, magna leo fermentum nunc, in varius mauris ex eu mi. Sed eleifend metus eget dui sollicitudin dictum. Vestibulum suscipit consequat neque vel posuere.</p>
-<h3>Subtitle</h3>
-<p>Donec in pretium risus. Etiam condimentum fermentum turpis vel dignissim. Sed tempor consequat urna, ac dapibus purus sollicitudin non. Nulla condimentum tortor elit, at tincidunt dui suscipit eget. Maecenas a orci ac urna lobortis tincidunt nec ut elit. Integer a dictum tortor, et commodo nisl. Phasellus commodo tincidunt egestas. Mauris commodo facilisis felis, quis scelerisque enim ullamcorper vestibulum. Praesent a maximus nunc. Pellentesque pretium augue ac pulvinar dapibus. Etiam nec nulla eu nunc dapibus semper et non ligula. Sed id risus eu velit vulputate iaculis sit amet vel nibh. In congue sit amet odio vel convallis.</p>
+<p>These resources includes 3 virtual patients cases highlighting various presentation of colorectal cancer.</p>
+<p>You can go through these resources on your own or as a team.</p>
+<p>As you go through the resources, you will encounter questions to encourage discussions. You can click on the “show answer” button to reveal the answers. Try to note down your own answer to compare to maximise your learning. </p>
+<p>NOTE: All patient cases are made up. Any reference to a real individual is purely coincidental. </p>
+
+<router-link to="/CaseStudyOne"><Button class="case-study-btn" label="Case 1" /> </router-link>
+<router-link to="/CaseStudyTwo"><Button class="case-study-btn" label="Case 2" /></router-link>
+<router-link to="/CaseStudyThree"><Button class="case-study-btn" label="Case 3" /></router-link>
+
 </template>
 
-<script>
 
+<script>
+import Button from 'primevue/button';
+
+export default {
+    components: {
+        Button,
+  
+    },
+}
 </script>
