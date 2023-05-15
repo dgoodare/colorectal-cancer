@@ -11,11 +11,11 @@
         <h3 class="case-study-header">Introduction</h3>   
     </template>
     <template #content>
-        <p><b>Setting</b></p>
-        <p>GP Surgery</p>
-        <p><b>Patient Information</b></p>
-        <p>John Cook, who is a 55-year-old male, walked into the clinic with a look of exhaustion on his face. </p>
-        <p>When asked what he came in for, he replies “I am tired all the time doctor. And I have been noticing some blood in my stool for the past few months.”</p>
+        <p class="case-text"><b>Setting</b></p>
+        <p class="case-text">GP Surgery</p>
+        <p class="case-text"><b>Patient Information</b></p>
+        <p class="case-text">John Cook, who is a 55-year-old male, walked into the clinic with a look of exhaustion on his face. </p>
+        <p class="case-text">When asked what he came in for, he replies “I am tired all the time doctor. And I have been noticing some blood in my stool for the past few months.”</p>
         
         
     </template>
@@ -37,25 +37,25 @@
         <h3 class="case-study-header">History and Physical Exam</h3>
     </template>
     <template #content>
-        <p>You decide to start by taking a focused history and performing a physical exam.</p>
-        <p>What question would you like to ask JC and what are you looking for on physical exam?</p>
+        <p class="case-text">You decide to start by taking a focused history and performing a physical exam.</p>
+        <p class="case-text">What question would you like to ask JC and what are you looking for on physical exam?</p>
 
         <Button class="showDialog" id="case-study-footer" label="Show Answer" @click="historyDialog()"></Button>
-        <Dialog v-model:visible="history" :style="{ width: '90vw' }" @after-hide="showHistory1()">
-            <p><b>History of Present Illness</b></p>
-            <p>John has been experiencing fatigue and weakness for the past few months. He reports that he gets tired easily and has difficulty keeping up with his daily routine. He has also noticed that he is short of breath when he exerts himself, such as climbing stairs or walking uphill. He denies any chest pain, palpitations, or syncope. He reports that he has been feeling increasingly dizzy and light-headed lately.</p>
+        <Dialog v-model:visible="history" class="case-study-dialog" @after-hide="showHistory1()">
+            <p class="case-text"><b>History of Present Illness</b></p>
+            <p class="case-text">John has been experiencing fatigue and weakness for the past few months. He reports that he gets tired easily and has difficulty keeping up with his daily routine. He has also noticed that he is short of breath when he exerts himself, such as climbing stairs or walking uphill. He denies any chest pain, palpitations, or syncope. He reports that he has been feeling increasingly dizzy and light-headed lately.</p>
 
-            <p><b>Past Medical History</b></p>
-            <p>John has a history of hypertension, hyperlipidemia, and GERD. He is currently taking lisinopril, atorvastatin, and omeprazole.</p>
+            <p class="case-text"><b>Past Medical History</b></p>
+            <p class="case-text">John has a history of hypertension, hyperlipidemia, and GERD. He is currently taking lisinopril, atorvastatin, and omeprazole.</p>
 
-            <p><b>Family History</b></p>
-            <p>John's mother had breast cancer at age 62, and his father died of a heart attack at age 72. His sister has a history of colon polyps.</p>
+            <p class="case-text"><b>Family History</b></p>
+            <p class="case-text">John's mother had breast cancer at age 62, and his father died of a heart attack at age 72. His sister has a history of colon polyps.</p>
 
-            <p><b>Social History</b></p>
-            <p>John is married with three children. He works as an accountant and is a non-smoker. He drinks alcohol occasionally.</p>
+            <p class="case-text"><b>Social History</b></p>
+            <p class="case-text">John is married with three children. He works as an accountant and is a non-smoker. He drinks alcohol occasionally.</p>
 
-            <p><b>Physical Examination</b></p>
-            <p>John appears fatigued but is alert and oriented. His vital signs are within normal limits. His conjunctivae are pale, and his tongue is smooth and beefy. There are no palpable lymph nodes, and his abdomen is soft and non-tender. A rectal examination reveals no palpable masses or blood in the stool.</p>
+            <p class="case-text"><b>Physical Examination</b></p>
+            <p class="case-text">John appears fatigued but is alert and oriented. His vital signs are within normal limits. His conjunctivae are pale, and his tongue is smooth and beefy. There are no palpable lymph nodes, and his abdomen is soft and non-tender. A rectal examination reveals no palpable masses or blood in the stool.</p>
         </Dialog>
 
         
@@ -77,19 +77,19 @@
         <h3 class="case-study-header">Differential Diagnosis</h3>
     </template>
     <template #content>
-        <p>You were suspecting iron deficiency anaemia and ordered a lab test. </p>
-        <p><b>Laboratory Tests</b></p>
-        <ul>
+        <p class="case-text">You were suspecting iron deficiency anaemia and ordered a lab test. </p>
+        <p class="case-text"><b>Laboratory Tests</b></p>
+        <ul class="case-text">
             <li>Hemoglobin: 8.2 g/dL (normal range: 13.5-17.5 g/dL)</li>
             <li>Mean corpuscular volume (MCV): 65 fL (normal range: 80-100 fL)</li>
             <li>Serum ferritin: 10 ng/mL (normal range: 30-400 ng/mL)</li>
         </ul>
 
-        <p>Before proceeding with the case take a moment to think.</p>
-        <p>What is the differential diagnosis for Iron deficiency anaemia for a male of his age?</p>
+        <p class="case-text">Before proceeding with the case take a moment to think.</p>
+        <p class="case-text">What is the differential diagnosis for Iron deficiency anaemia for a male of his age?</p>
 
         <Button class="showDialog" label="Show Answer" @click="diagnosisDialog()"></Button>
-        <Dialog v-model:visible="diagnosis" :style="{ width: '90vw' }" @after-hide="showDiagnosis1()">
+        <Dialog v-model:visible="diagnosis" class="case-study-dialog" @after-hide="showDiagnosis1()">
             <ol>
                 <li>Nutritional deficiency: iron, folic acid, and vitamin B12.</li>
                 <li>Gastrointestinal bleeding: Ulcers, diverticulitis, inflammatory bowel disease, and colorectal cancer.</li>
@@ -116,15 +116,15 @@
         <h3 class="case-study-header">Colonoscopy</h3>
     </template>
     <template #content>
-        <p>Colonoscopy showed a suspicious lesion on the ascending colon.</p>
-        <p>Biopsy of the lesion confirms the diagnosis of adenocarcinoma.</p>
+        <p class="case-text">Colonoscopy showed a suspicious lesion on the ascending colon.</p>
+        <p class="case-text">Biopsy of the lesion confirms the diagnosis of adenocarcinoma.</p>
 
-        <p><b>CT Scan</b></p>
+        <p class="case-text"><b>CT Scan</b></p>
 
         <img class="case-study-img" src="case-studies/case-1-colonoscopy.png">
         <p class="ref">Image courtesy of Mohammadtaghi Niknejad. From the case <a href="https://radiopaedia.org/cases/98802?lang=us">rID: 98802</a></p>
 
-        <p>Marked increased wall thickness suggestive of tumor infiltration is present at the cecum, proximal ascending colon, and the distal portion of the ileum</p>
+        <p class="case-text">Marked increased wall thickness suggestive of tumor infiltration is present at the cecum, proximal ascending colon, and the distal portion of the ileum</p>
     </template>
 </Card>
 
@@ -143,12 +143,12 @@
         <h3 class="case-study-header">Management</h3>
     </template>
     <template #content>
-        <p><b>Surgery</b></p>
-        <p>A right hemicolectomy is planned for this patient. This involves the dissection of the ascending colon and a part of the transverse colon.</p>
-        <p>Which artery supplies the ascending colon and the transverse colon and has to be isolated for this surgery?</p>
+        <p class="case-text"><b>Surgery</b></p>
+        <p class="case-text">A right hemicolectomy is planned for this patient. This involves the dissection of the ascending colon and a part of the transverse colon.</p>
+        <p class="case-text">Which artery supplies the ascending colon and the transverse colon and has to be isolated for this surgery?</p>
 
         <Button class="showDialog" label="Show Answer" @click="managementDialog()"></button>
-        <Dialog v-model:visible="management" :style="{ width: '90vw' }" @after-hide="showManagement1()">
+        <Dialog v-model:visible="management" class="case-study-dialog" @after-hide="showManagement1()">
             <ol>
                 <li>Nutritional deficiency: iron, folic acid, and vitamin B12.</li>
                 <li>Gastrointestinal bleeding: Ulcers, diverticulitis, inflammatory bowel disease, and colorectal cancer.</li>
@@ -176,12 +176,12 @@
     </template>
     <template #content>
         <img class="case-study-img" src="case-studies/case-1-staging.png">
-        <p>Which stage of colorectal cancer does this indicate?</p>
-        <p>You may want use the <router-link to="/stages-of-crc">3D models</router-link> to help answer this question</p>
+        <p class="case-text">Which stage of colorectal cancer does this indicate?</p>
+        <p class="case-text">You may want use the <router-link to="/stages-of-crc">3D models</router-link> to help answer this question</p>
 
         <Button class="showDialog" label="Show Answer" @click="stagingDialog()"></button>
-        <Dialog v-model:visible="staging" :style="{ width: '90vw' }" @after-hide="showStaging()">
-            <p>T2: Tumour has invaded the muscularis externa but has not extended beyond it.</p>
+        <Dialog v-model:visible="staging" class="case-study-dialog" @after-hide="showStaging()">
+            <p class="case-text">T2: Tumour has invaded the muscularis externa but has not extended beyond it.</p>
         </Dialog>
     </template>
 </Card>

@@ -6,46 +6,46 @@
     <p>The colon is divided into seven parts (proximal to distal): ceacum, ascending colon, transverse colon, descending colon, sigmoid colon, rectum, anal canal.  </p>
     <Accordion class="accordian-container">
         <AccordionTab header="Ceacum">
-            <p>The ceacum lies retroperitoneally in the right side of the abdomen in the right iliac fosa. It connects to the ileum through an opening called the ileoceacal valve.  </p>
+            <p class="tab-p">The ceacum lies retroperitoneally in the right side of the abdomen in the right iliac fosa. It connects to the ileum through an opening called the ileoceacal valve.  </p>
         </AccordionTab>
         <AccordionTab header="Ascending Colon">
-            <p>The ascending colon is an upward continuation of the ceacum. When it reaches the lower surface of the liver, it turns medially to form the hepatic flexure and continues as the transverse colon. The ascending colon lies retroperitoneally on the right side of the abdomen. </p>
+            <p class="tab-p">The ascending colon is an upward continuation of the ceacum. When it reaches the lower surface of the liver, it turns medially to form the hepatic flexure and continues as the transverse colon. The ascending colon lies retroperitoneally on the right side of the abdomen. </p>
         </AccordionTab>
         <AccordionTab header="Transverse Colon">
-            <p>The transverse colon is located horizontally across the abdomen. It is an intraperitoneal structure enclosed by the transverse mesocolon. The transverse colon extends leftwards towards the inferior surface of the spleen, forming the splenic flexure. It then turns inferiorly to continue as the descending colon.  </p>
+            <p class="tab-p">The transverse colon is located horizontally across the abdomen. It is an intraperitoneal structure enclosed by the transverse mesocolon. The transverse colon extends leftwards towards the inferior surface of the spleen, forming the splenic flexure. It then turns inferiorly to continue as the descending colon.  </p>
         </AccordionTab>
         <AccordionTab header="Descending Colon">
-            <p>The descending colon lies retroperitoneally on the left side of the abdomen as a continuation of the transverse colon. It continues downwards to the left iliac fossa and turns medially as the sigmoid colon. </p>
+            <p class="tab-p">The descending colon lies retroperitoneally on the left side of the abdomen as a continuation of the transverse colon. It continues downwards to the left iliac fossa and turns medially as the sigmoid colon. </p>
         </AccordionTab>
         <AccordionTab header="Sigmoid Colon ">
-            <p>The sigmoid colon is located in the left lower quadrant of the abdomen, extending from the left iliac fossa to the level of the S3 vertebra. The sigmoid colon is attached to the posterior pelvic wall by a mesentery - the sigmoid mesocolon. The course of the sigmoid colon results in its characteristic “S” shape.  </p>
-            <p>Similarly, the venous drainage of the colon follows a similar pattern, with each segment draining into a specific vein that ultimately empties into the hepatic portal vein, allowing toxins to be processed by the liver. </p>
+            <p class="tab-p">The sigmoid colon is located in the left lower quadrant of the abdomen, extending from the left iliac fossa to the level of the S3 vertebra. The sigmoid colon is attached to the posterior pelvic wall by a mesentery - the sigmoid mesocolon. The course of the sigmoid colon results in its characteristic “S” shape.  </p>
+            <p class="tab-p">Similarly, the venous drainage of the colon follows a similar pattern, with each segment draining into a specific vein that ultimately empties into the hepatic portal vein, allowing toxins to be processed by the liver. </p>
         </AccordionTab>
     </Accordion>
     
     <Divider/>
 
-    <TabView :scrollable="true">
+    <TabView :scrollable="true" class="tab-view">
         <TabPanel class="tab-header" header="Arterial Supply">
-            <p>In general, the superior mesenteric artery supplies structures derived from the midgut, while the inferior mesenteric artery supplies structures derived from the hindgut.  </p>
-            <p>The ascending colon receives its blood supply from the ileocolic and right colic arteries, both branches of the superior mesenteric artery.  </p>
-            <p>The transverse colon, being derived from both midgut and hindgut, is supplied by the right colic and middle colic arteries from the superior mesenteric artery, as well as the left colic artery from the inferior mesenteric artery.</p>
-            <p>The descending colon is supplied solely by the left colic artery from the inferior mesenteric artery, and the sigmoid colon is supplied by the sigmoid arteries, also from the inferior mesenteric artery. </p>
+            <p class="tab-p">In general, the superior mesenteric artery supplies structures derived from the midgut, while the inferior mesenteric artery supplies structures derived from the hindgut.  </p>
+            <p class="tab-p">The ascending colon receives its blood supply from the ileocolic and right colic arteries, both branches of the superior mesenteric artery.  </p>
+            <p class="tab-p">The transverse colon, being derived from both midgut and hindgut, is supplied by the right colic and middle colic arteries from the superior mesenteric artery, as well as the left colic artery from the inferior mesenteric artery.</p>
+            <p class="tab-p">The descending colon is supplied solely by the left colic artery from the inferior mesenteric artery, and the sigmoid colon is supplied by the sigmoid arteries, also from the inferior mesenteric artery. </p>
         </TabPanel>
 
         <TabPanel class="tab-header" header="Venous Drainage">
-            <p>The venous drainage of the colon is similar to the arterial supply: </p>
-            <ul>
+            <p class="tab-p">The venous drainage of the colon is similar to the arterial supply: </p>
+            <ul class="tab-p">
                 <li>Ascending colon - ileocolic and right colic veins, which empty into the superior mesenteric vein. </li>
                 <li>Transverse colon - middle colic vein, which empties into the superior mesenteric vein. </li>
                 <li>Descending colon - left colic vein, which drains into the inferior mesenteric vein. </li>
                 <li>Sigmoid colon - drained by the sigmoid veins into the inferior mesenteric vein. </li>
             </ul>
-            <p>The superior mesenteric and inferior mesenteric veins ultimately empty ultimately empties into the hepatic portal vein, allowing toxins to be processed by the liver. </p>
+            <p class="tab-p">The superior mesenteric and inferior mesenteric veins ultimately empty ultimately empties into the hepatic portal vein, allowing toxins to be processed by the liver. </p>
         </TabPanel>
 
         <TabPanel class="tab-header" header="Lymphatic Drainage">
-            <p>The lymphatic drainage of the colon also follows this pattern, with the ascending and transverse colon draining into the superior mesenteric nodes, and the descending colon and sigmoid colon draining into the inferior mesenteric nodes. Most of the lymph from these nodes passes into the intestinal lymph trunks and ultimately empties into the thoracic duct. </p>
+            <p class="tab-p">The lymphatic drainage of the colon also follows this pattern, with the ascending and transverse colon draining into the superior mesenteric nodes, and the descending colon and sigmoid colon draining into the inferior mesenteric nodes. Most of the lymph from these nodes passes into the intestinal lymph trunks and ultimately empties into the thoracic duct. </p>
         </TabPanel>
     </TabView>
 </template>

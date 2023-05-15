@@ -12,14 +12,14 @@
             <h3 class="case-study-header">Introduction</h3>   
         </template>
         <template #content>
-            <p><b>Patient Information</b></p>
-            <p>Ross White, who is a 64-year-old female, received an invitation from the bowel cancer screening programme to take part in screening.</p>
-            <p>What do you know about the Scottish Bowel Screening programme?</p>
+            <p class="case-text"><b>Patient Information</b></p>
+            <p class="case-text">Ross White, who is a 64-year-old female, received an invitation from the bowel cancer screening programme to take part in screening.</p>
+            <p class="case-text">What do you know about the Scottish Bowel Screening programme?</p>
             
-            <Dialog v-model:visible="intro" :style="{ width: '90vw' }" @after-hide="showIntro()">
-               <p>The Scottish Bowel Screening Programme invites men and women aged between 50-74 years to take part in the screening programme every two years. The screening test can be completed at home. Since 2017 the Faecal Immunochemical Test or FIT test has been used as the screening test.  </p>
-               <p>The FIT test looks for small samples of blood within the stool that may not be visible to the naked eye. This test is used to identify bowel cancer in its early stages when there are no symptoms and other changes in the bowel such as pre-cancerous growths called “polyps”. </p>
-               <p>For every 500 people who take the test only 10 will require further investigations and of this 10 only 1 will have bowel cancer.  </p>
+            <Dialog v-model:visible="intro" class="case-study-dialog" @after-hide="showIntro()">
+               <p class="case-text">The Scottish Bowel Screening Programme invites men and women aged between 50-74 years to take part in the screening programme every two years. The screening test can be completed at home. Since 2017 the Faecal Immunochemical Test or FIT test has been used as the screening test.  </p>
+               <p class="case-text">The FIT test looks for small samples of blood within the stool that may not be visible to the naked eye. This test is used to identify bowel cancer in its early stages when there are no symptoms and other changes in the bowel such as pre-cancerous growths called “polyps”. </p>
+               <p class="case-text">For every 500 people who take the test only 10 will require further investigations and of this 10 only 1 will have bowel cancer.  </p>
             </Dialog>
         </template>
         
@@ -40,13 +40,13 @@
             <h3 class="case-study-header">Consultation</h3>
         </template>
         <template #content>
-            <p>The qFIT that was done came back to be 150 µg Hb/g. This indicates that there was blood found in the stool. Ross was invited to the clinic for discussion for further investigation.</p>
-            <p>Ross was enquired about whether she has symptoms of colorectal cancer. What are the symptoms of colorectal cancer?</p>
+            <p class="case-text">The qFIT that was done came back to be 150 µg Hb/g. This indicates that there was blood found in the stool. Ross was invited to the clinic for discussion for further investigation.</p>
+            <p class="case-text">Ross was enquired about whether she has symptoms of colorectal cancer. What are the symptoms of colorectal cancer?</p>
     
             <Button class="showDialog" id="case-study-footer" label="Show Answer" @click="consultationDialog()"></Button>
-            <Dialog v-model:visible="consultation" :style="{ width: '90vw' }" @after-hide="showconsultation()">
-               <p>Some of the signs and symptoms of bowel cancer include:</p>
-               <ul>
+            <Dialog v-model:visible="consultation" class="case-study-dialog" @after-hide="showconsultation()">
+               <p class="case-text">Some of the signs and symptoms of bowel cancer include:</p>
+               <ul class="case-text">
                 <li>A change in bowel habit (usually more frequent and loose stools)</li>
                 <li>Unexplained weight loss</li>
                 <li>Rectal bleeding</li>
@@ -75,16 +75,16 @@
             <h3 class="case-study-header">Colonoscopy</h3>
         </template>
         <template #content>
-            <p>Colonoscopy found 2 abnormalities in the patient's colon.</p>
-            <p>Lesion 1: Pedunculated polyp found in the descending colon. Successfully removed with the stalk. Pathology shows benign adenoma.</p>
-            <p>Lesion 2: Suspicious lesion found in the rectum, about 15 cm from the anal verge. Biopsy taken which shows neoplastic features.</p>
-            <p>What is a polyp?</p>
+            <p class="case-text">Colonoscopy found 2 abnormalities in the patient's colon.</p>
+            <p class="case-text">Lesion 1: Pedunculated polyp found in the descending colon. Successfully removed with the stalk. Pathology shows benign adenoma.</p>
+            <p class="case-text">Lesion 2: Suspicious lesion found in the rectum, about 15 cm from the anal verge. Biopsy taken which shows neoplastic features.</p>
+            <p class="case-text">What is a polyp?</p>
     
             <Button class="showDialog" label="Show Answer" @click="colonoscopyDialog()"></Button>
-            <Dialog v-model:visible="colonoscopy" :style="{ width: '90vw' }" @after-hide="showcolonoscopy()">
-                <p>A polyp is a protrusion above the epithelial surface, it is a tumour, but it can be benign or malignant. Bowel polyps are incredibly common affecting 1 in 4 people above the age of 50. They are often asymptomatic and picked up during the Bowel Screening Programme.</p>
-                <p>It is widely accepted that this adenoma-carcinoma sequence is the process by which most colorectal cancers arise.</p>
-                <p>Due to their premalignant potential all adenomas must be removed either endoscopically or surgically.</p>
+            <Dialog v-model:visible="colonoscopy" class="case-study-dialog" @after-hide="showcolonoscopy()">
+                <p class="case-text">A polyp is a protrusion above the epithelial surface, it is a tumour, but it can be benign or malignant. Bowel polyps are incredibly common affecting 1 in 4 people above the age of 50. They are often asymptomatic and picked up during the Bowel Screening Programme.</p>
+                <p class="case-text">It is widely accepted that this adenoma-carcinoma sequence is the process by which most colorectal cancers arise.</p>
+                <p class="case-text">Due to their premalignant potential all adenomas must be removed either endoscopically or surgically.</p>
             </Dialog>
         </template>
     </Card>
@@ -104,14 +104,14 @@
             <h3 class="case-study-header">Management</h3>
         </template>
         <template #content>
-            <p><b>Surgery</b></p>
-            <p>A high anterior resection is planned for this patient. This involves the dissection of the rectum and the sigmoid colon.</p>
-            <p>Which artery supplies the sigmoid colon and has to be isolated for this surgery?</p>
+            <p class="case-text"><b>Surgery</b></p>
+            <p class="case-text">A high anterior resection is planned for this patient. This involves the dissection of the rectum and the sigmoid colon.</p>
+            <p class="case-text">Which artery supplies the sigmoid colon and has to be isolated for this surgery?</p>
     
             <Button class="showDialog" label="Show Answer" @click="managementDialog()"></Button>
-            <Dialog v-model:visible="management" :style="{ width: '90vw' }" @after-hide="showManagement()">
-                <p>The sigmoid colon is supplied by the sigmoid arteries, which derives from the inferior mesenteric artery.</p>
-                <p>The rectum has blood supply from superior and inferior rectal arteries. Superior rectal artery is a branch of the inferior mesenteric artery while inferior rectal artery is a branch of the internal iliac artery.</p>
+            <Dialog v-model:visible="management" class="case-study-dialog" @after-hide="showManagement()">
+                <p class="case-text">The sigmoid colon is supplied by the sigmoid arteries, which derives from the inferior mesenteric artery.</p>
+                <p class="case-text">The rectum has blood supply from superior and inferior rectal arteries. Superior rectal artery is a branch of the inferior mesenteric artery while inferior rectal artery is a branch of the internal iliac artery.</p>
             </Dialog>
     
             
@@ -132,12 +132,12 @@
         </template>
         <template #content>
             <img class="case-study-img" src="case-studies/case-2-staging.jpg">
-            <p>Which stage of colorectal cancer does this indicate?</p>
-            <p>You may want use the <router-link to="/stages-of-crc">3D models</router-link> to help answer this question</p>
+            <p class="case-text">Which stage of colorectal cancer does this indicate?</p>
+            <p class="case-text">You may want use the <router-link to="/stages-of-crc">3D models</router-link> to help answer this question</p>
     
             <Button class="showDialog" label="Show Answer" @click="stagingDialog()"></Button>
-            <Dialog v-model:visible="staging" :style="{ width: '90vw' }" @after-hide="showStaging()">
-                <p>T1: Tumour has invaded the submucosa, but not the muscularis externa.</p>
+            <Dialog v-model:visible="staging" class="case-study-dialog" @after-hide="showStaging()">
+                <p class="case-text">T1: Tumour has invaded the submucosa, but not the muscularis externa.</p>
             </Dialog>
     
             
