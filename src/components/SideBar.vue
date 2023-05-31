@@ -13,6 +13,8 @@
     <router-link to="/case-studies"><Button class="sidebar-item" label="Case Studies" icon="pi pi-book" @click="hideSidebar"/></router-link>
     
     <router-link to="/how-to-use"><Button class="sidebar-item" label="How to use this app" icon="pi pi-question" @click="hideSidebar"/></router-link>
+
+    <router-link to="/about-us"><Button class="sidebar-item" label="About Us" icon="pi pi-users" @click="hideSidebar"/></router-link>
     
     <router-link to="/references"><Button class="sidebar-item" label="References" icon="pi pi-pencil" @click="hideSidebar"/></router-link>
 </Sidebar>

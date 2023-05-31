@@ -1,6 +1,6 @@
 <template>
     <div class="stage-container">
-
+      <p>This page contains 3D models of the different tumor stages. By using the blue buttons, you can scroll through the different stages. For each of the four stages, there is a large model of the sigmoid colon (top) and a small model showing just the tumor (bottom).</p>
       <h3>General colon histology</h3>
     <p>The 4 layers of the colon are:</p>
     <ul class="ul">

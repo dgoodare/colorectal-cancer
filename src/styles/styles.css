@@ -65,6 +65,10 @@ a{
     padding-left: 2%;
 }
 
+.tab-p{
+    width: 100%;
+}
+
 .p-accordion .p-accordion-header .p-accordion-header-link {
     padding: 1rem;
     color: white;
@@ -192,6 +196,17 @@ model-viewer{
     font-weight: lighter;
 }
 
+.about-card{
+    width: fit-content;
+    display: inline-grid;
+    margin: 1%;
+    border: solid;
+    border-color: #00A6CA;
+    border-radius: 5%;
+}
+
+.about-h{}
+
 /* Change UI for larger screens*/
 @media only screen and (min-width: 1000px) {
     .tab-p{margin-left: 0;}
@@ -212,6 +227,20 @@ model-viewer{
     .case-study-dialog{width: 50%;}
     .case-study-card .case-text{margin-left: 2%;}
     .ref{margin-left: 2%}
+
+    /* About us */
+    .about-section{
+        margin-left: 9%;
+        width: 60%;
+    }    
+    .about-card{
+        width: fit-content;
+        display: inline-grid;
+        margin: 1%;
+        border: solid;
+        border-color: #00A6CA;
+        border-radius: 5%;
+    }
 
     .model-container, .stage-toolbar, .accordian-container, .tab-view, .img, h1, h2, h3, .ul, p, ol{width: 50%; margin-left: 10%};
 }

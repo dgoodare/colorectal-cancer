@@ -10,6 +10,7 @@ import ReferencesView from '../views/ReferencesView'
 import CaseOneView from '../views/CaseOneView'
 import CaseTwoView from '../views/CaseTwoView'
 import CaseThreeView from '../views/CaseThreeView'
+import AboutUsView from '../views/AboutUsView'
 
 const routes = [
     {
@@ -41,6 +42,11 @@ const routes = [
         path: '/how-to-use',
         name: 'HowToUse',
         component: HowToUse
+    },
+    {
+        path: '/about-us',
+        name: 'AboutUs',
+        component: AboutUsView
     },
     {
         path: '/references',
